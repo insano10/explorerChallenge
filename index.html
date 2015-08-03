@@ -4,48 +4,65 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Explorerchallenge by insano10</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/insano10/explorerChallenge">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/insano10/explorerChallenge/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/insano10/explorerChallenge/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
-
     <div class="wrapper">
+      <header>
+        <h1>Explorerchallenge</h1>
+        <p>maze traversal coding challenge</p>
 
+        <p class="view"><a href="https://github.com/insano10/explorerChallenge">View the Project on GitHub <small>insano10/explorerChallenge</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/insano10/explorerChallenge/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/insano10/explorerChallenge/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/insano10/explorerChallenge">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
       <section>
-        <div id="title">
-          <h1>Explorerchallenge</h1>
-          <p>maze traversal coding challenge</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/insano10">insano10</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-
         <h1>
 <a id="explorerchallenge" class="anchor" href="#explorerchallenge" aria-hidden="true"><span class="octicon octicon-link"></span></a>explorerChallenge</h1>
 
-<p>maze traversal coding challenge</p>
-      </section>
+<p>explorerChallenge is a maze traversal coding challenge suitable for running as a competitive dojo session.
+The participant must implement an API to direct an explorer around a maze to find the exit.</p>
 
+<p><img src="https://raw.githubusercontent.com/insano10/explorerChallenge/master/docs/front_end.png" alt=""></p>
+
+<p>The project consists of:</p>
+
+<ul>
+<li><p>A web front end accessible at localhost:8080 to drive the algorithm and show the maze traversal</p></li>
+<li><p>A maze API to provide maze definitions (the participant should not change this)</p></li>
+<li><p>An explorer API to provide directions through the maze. A dummy implementation has been provided but this is what the participant needs to implement.</p></li>
+</ul>
+
+<p>A handout to run the dojo is available <a href="https://docs.google.com/document/d/1O1aMwZY5A6b2a5FSSaTswy0nfM3wbmZtr630Cbo-1F4/edit?usp=sharing" title="explorerChallenge handout">here</a>.
+This contains information on how to setup and run the project.</p>
+
+<p>There are 2 branches of interest to the project:</p>
+
+<ul>
+<li>
+<strong>master</strong> - this is the branch participants should develop against</li>
+<li>
+<strong>judge</strong> - this branch contains extra mazes the participants algorithms should be tested against. It also adds an additional control to the web front end to allow the user 
+          to connect to explorer APIs on remote hosts. This allows for testing participants algorithms without giving them access to the test mazes</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/insano10">insano10</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
